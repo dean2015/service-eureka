@@ -23,15 +23,14 @@
     </dependencies>
 
     <build>
-        <finalName>dlfc-cloud-eureka-server</finalName>
-        <defaultGoal>package</defaultGoal>
+        <finalName>${project.artifactId}</finalName>
         <plugins>
             <plugin>
                 <artifactId>maven-assembly-plugin</artifactId>
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>cn.housecenter.dlfc.cloud.eureka.EurekaServer</mainClass>
+                            <mainClass>cn.devcenter.framework.eureka.EurekaServer</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>
@@ -47,7 +46,7 @@
                     <classesDirectory>target/classes/</classesDirectory>
                     <archive>
                         <manifest>
-                            <mainClass>cn.housecenter.dlfc.cloud.eureka.EurekaServer</mainClass>
+                            <mainClass>cn.devcenter.framework.eureka.EurekaServer</mainClass>
                             <!-- 打包时 MANIFEST.MF文件不记录的时间戳版本 -->
                             <useUniqueVersions>false</useUniqueVersions>
                             <addClasspath>true</addClasspath>
